@@ -508,7 +508,6 @@ public class NewJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     public void initMyStuff(ArrayList numbers, ArrayList numbersInRandomOrder, javax.swing.JToggleButton[] buttons, javax.swing.JButton[] arrowButtons) {
-        Random rand = new Random();
         int randomIndex = rand.nextInt(9);
 
         for (int i = 0; i < 9; i++) {
@@ -595,7 +594,7 @@ public class NewJFrame extends javax.swing.JFrame {
         javax.swing.JOptionPane.showMessageDialog(null, "You got " + prize + "MGP!!");
         
         int restartGame = javax.swing.JOptionPane.showConfirmDialog(null, "Play again?");
-        System.out.println(restartGame);
+
         switch (restartGame) {
             case 0:
                 sum = 0;
